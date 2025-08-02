@@ -1,0 +1,70 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#e0f7fa"/>
+  <!-- Road -->
+  <rect y="250" width="100%" height="100" fill="#9e9e9e"/>
+
+  <!-- Bicycle -->
+  <g transform="translate(0, 50)">
+    <!-- Wheels -->
+    <circle cx="100" cy="200" r="50" stroke="#333" stroke-width="8" fill="#fff"/>
+    <circle cx="100" cy="200" r="5" fill="#333"/>
+    <circle cx="300" cy="200" r="50" stroke="#333" stroke-width="8" fill="#fff"/>
+    <circle cx="300" cy="200" r="5" fill="#333"/>
+
+    <!-- Frame (Red) -->
+    <!-- Main Triangle -->
+    <path d="M 100 200 L 180 140 L 280 140 L 200 200 Z" fill="none" stroke="#f44336" stroke-width="10"/>
+    <!-- Seat Stay -->
+    <line x1="100" y1="200" x2="180" y2="140" stroke="#f44336" stroke-width="10"/>
+    <!-- Chain Stay -->
+    <line x1="100" y1="200" x2="200" y2="200" stroke="#f44336" stroke-width="10"/>
+
+    <!-- Crank/Pedal area -->
+    <circle cx="200" cy="200" r="15" fill="none" stroke="#333" stroke-width="3"/>
+
+    <!-- Front Fork -->
+    <line x1="300" y1="200" x2="280" y2="120" stroke="#f44336" stroke-width="10"/>
+
+    <!-- Handlebars -->
+    <path d="M 260 100 Q 280 110, 280 120" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 300 100 Q 280 110, 280 120" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Seat Post and Seat -->
+    <line x1="180" y1="140" x2="170" y2="100" stroke="#f44336" stroke-width="10"/>
+    <rect x="150" y="90" width="50" height="15" rx="5" fill="#333"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(10, 0)">
+    <!-- Legs (Orange) -->
+    <path d="M 170 160 L 190 210" stroke="#FFA726" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 160 160 L 170 240" stroke="#FFA726" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Body (White) -->
+    <ellipse cx="160" cy="130" rx="50" ry="70" fill="#fff" stroke="#333" stroke-width="3"/>
+
+    <!-- Wing (simplified, holding handlebar) -->
+    <!-- We adjust the endpoint to reach the handlebar area (around 270, 150 in this coordinate space) -->
+    <path d="M 160 130 Q 220 100, 270 150" stroke="#ddd" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <path d="M 160 130 Q 220 100, 270 150" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Neck and Head -->
+    <path d="M 160 80 C 180 40, 200 40, 210 60" fill="#fff" stroke="none"/>
+    <ellipse cx="210" cy="60" rx="35" ry="25" fill="#fff" stroke="#333" stroke-width="3"/>
+
+    <!-- Beak -->
+    <!-- Lower Pouch -->
+    <path d="M 220 70 Q 280 110, 300 65 L 225 65 Z" fill="#FFB74D" stroke="#333" stroke-width="2"/>
+    <!-- Upper Beak -->
+    <path d="M 220 55 L 310 50 L 300 65 L 220 65 Z" fill="#FFA726" stroke="#333" stroke-width="2"/>
+
+    <!-- Eye -->
+    <circle cx="225" cy="50" r="5" fill="#000"/>
+    <circle cx="227" cy="48" r="2" fill="#fff"/>
+
+    <!-- Tail feathers -->
+    <path d="M 110 150 Q 90 160, 115 170" fill="#fff" stroke="#333" stroke-width="3"/>
+  </g>
+
+</svg>
